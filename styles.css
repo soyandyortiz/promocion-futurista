@@ -1,0 +1,186 @@
+/* Estilos Generales */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1a1a1a;
+    color: #fff;
+    background-image: url('textura-futurista.png');
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(255, 251, 0, 0.3);
+}
+
+/* Estilo para el contenedor del logotipo */
+.logo-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Estilo para el logotipo */
+.logo {
+    width: 150px; /* Ajusta el tamaño según necesites */
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.logo:hover {
+    transform: scale(1.1); /* Efecto de zoom al pasar el mouse */
+}
+
+/* Logotipo responsive */
+@media only screen and (max-width: 600px) {
+    .logo {
+        width: 100px; /* Tamaño más pequeño para pantallas móviles */
+    }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1200px) {
+    .logo {
+        width: 120px; /* Tamaño intermedio para tabletas */
+    }
+}
+
+
+/* Encabezado */
+header {
+    text-align: center;
+    background-color: #111;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+h1 {
+    font-size: 2.5em;
+    color: #ffc400;
+    text-shadow: 0 0 5px #000000;
+}
+
+p {
+    font-size: 1.2em;
+    color: #ffffff;
+}
+
+/* Sección de la Oferta */
+.offer-info {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+    text-align: left;
+}
+
+.offer-info ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.offer-info li {
+    margin: 15px 0;
+    font-size: 1.2em;
+    display: flex;
+    align-items: center;
+}
+
+.offer-info li i {
+    color: #ffc400;
+    margin-right: 10px;
+}
+
+/* Formulario */
+.subscription-form {
+    background-color: #282828;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.subscription-form input,
+.subscription-form select {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: none;
+    font-size: 1em;
+    color: #333;
+}
+
+.subscription-form button {
+    background-color: #ffc400;
+    color: #fff;
+    border: none;
+    padding: 15px 20px;
+    cursor: pointer;
+    font-size: 1.2em;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.subscription-form button:hover {
+    background-color: #b58b00;
+}
+
+/* Temporizador */
+.countdown-container {
+    text-align: center;
+    font-size: 1.5em;
+    margin: 20px 0;
+}
+
+#countdown {
+    font-size: 2.5em;
+    color: #ffc400;
+}
+
+/* Responsive Design */
+@media only screen and (max-width: 600px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    .offer-info li {
+        font-size: 1em;
+    }
+}
+
+/* Redes Sociales */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 30px;
+}
+
+.social-container p {
+    color: #fff;
+    font-size: 1.2em;
+    margin-bottom: 15px;
+}
+
+.social-icon {
+    color: #ffc400;
+    font-size: 2em;
+    margin: 0 15px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-icon:hover {
+    color: #b58b00;
+    transform: scale(1.2);
+}
+
+/* Responsive para redes sociales */
+@media only screen and (max-width: 600px) {
+    .social-icon {
+        font-size: 1.5em;
+        margin: 0 10px;
+    }
+}

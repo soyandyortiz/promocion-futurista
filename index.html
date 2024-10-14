@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promoción Futurista - ¡Solo $48!</title>
+    <!-- Icono en la pestaña -->
+    <link rel="icon" href="/icono.png" type="image/png">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Contenedor Principal -->
+    <div class="container">
+        <header>
+            <!-- Contenedor del Logotipo -->
+            <div class="logo-container">
+                <img src="/logotipo.png" alt="Logotipo" class="logo">
+            </div>
+            <h1>Promoción Futurista: ¡Página Web + Tienda Online por Solo $48!</h1>
+            <p>Oferta exclusiva para los seleccionados.</p>
+        </header>        
+
+        <!-- Temporizador de Urgencia -->
+        <div class="countdown-container">
+            <p>Oferta disponible por tiempo limitado:</p>
+            <div id="countdown"></div>
+        </div>
+
+        <!-- Información de la Oferta -->
+        <section class="offer-info">
+            <h2>Incluye:</h2>
+            <ul>
+                <li><i class="fas fa-laptop-code"></i> Página web profesional adaptativa (4 secciones).</li>
+                <li><i class="fas fa-store"></i> Tienda online con hasta 10 productos.</li>
+                <li><i class="fas fa-comment-dots"></i> Cierre de compras vía WhatsApp.</li>
+                <li><i class="fas fa-money-check-alt"></i> Asesoría para dominio y hosting.</li>
+            </ul>
+        </section>
+
+        <!-- Formulario de Suscripción -->
+        <section class="subscription-form">
+            <h2>¡Sé uno de los seleccionados para acceder a esta oferta!</h2>
+            <form id="subscribe-form" method="POST">
+                <input type="text" id="name" name="name" placeholder="Tu nombre" required>
+                <input type="email" id="email" name="email" placeholder="Tu email" required>
+                <input type="text" id="whatsapp" name="whatsapp" placeholder="Tu número de WhatsApp" required>
+
+                <!-- Selección de País -->
+                <select id="country" name="country" required>
+                    <option value="">Selecciona tu país</option>
+                    <option value="Argentina">Argentina</option>
+                    <option value="Bolivia">Bolivia</option>
+                    <option value="Chile">Chile</option>
+                    <option value="Colombia">Colombia</option>
+                    <option value="Ecuador">Ecuador</option>
+                    <option value="Peru">Perú</option>
+                    <!-- Más países -->
+                </select>
+
+                <button type="submit">Quiero ser seleccionado</button>
+            </form>
+            <p id="status-message"></p>
+        </section>
+    </div>
+
+    <!-- Scripts -->
+    <script src="scripts.js"></script>
+
+    <!-- Redes Sociales -->
+<footer>
+    <div class="social-container">
+        <p>Síguenos en nuestras redes sociales:</p>
+        <a href="https://www.instagram.com/guambraweb/" target="_blank" class="social-icon">
+            <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://www.facebook.com/guambraweb" target="_blank" class="social-icon">
+            <i class="fab fa-facebook"></i>
+        </a>
+        <a href="https://www.youtube.com/@guambraweb" target="_blank" class="social-icon">
+            <i class="fab fa-youtube"></i>
+        </a>
+        <a href="https://wa.me/593995871985" target="_blank" class="social-icon">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+    </div>
+</footer>
+
+</body>
+</html>
